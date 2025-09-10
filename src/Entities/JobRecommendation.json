@@ -1,0 +1,53 @@
+{
+  "name": "JobRecommendation",
+  "type": "object",
+  "properties": {
+    "interview_id": {
+      "type": "string",
+      "description": "Reference to mock interview"
+    },
+    "job_title": {
+      "type": "string",
+      "description": "Recommended job title"
+    },
+    "company": {
+      "type": "string",
+      "description": "Hiring company name"
+    },
+    "location": {
+      "type": "string",
+      "description": "Job location"
+    },
+    "salary_range": {
+      "type": "string",
+      "description": "Salary range for the position"
+    },
+    "job_description": {
+      "type": "string",
+      "description": "Detailed job description"
+    },
+    "required_skills": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "match_percentage": {
+      "type": "number",
+      "description": "How well candidate matches (0-100)"
+    },
+    "job_url": {
+      "type": "string",
+      "description": "External job posting URL"
+    },
+    "is_featured": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "interview_id",
+    "job_title",
+    "company"
+  ]
+}

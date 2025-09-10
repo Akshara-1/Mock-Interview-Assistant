@@ -1,0 +1,116 @@
+{
+  "name": "MockInterview",
+  "type": "object",
+  "properties": {
+    "resume_id": {
+      "type": "string",
+      "description": "Reference to the candidate's resume"
+    },
+    "target_role": {
+      "type": "string",
+      "description": "Role being interviewed for"
+    },
+    "questions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "question": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "technical",
+              "behavioral",
+              "aptitude",
+              "situational"
+            ]
+          },
+          "difficulty": {
+            "type": "string",
+            "enum": [
+              "easy",
+              "medium",
+              "hard"
+            ]
+          },
+          "expected_duration": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "responses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "question_id": {
+            "type": "string"
+          },
+          "audio_url": {
+            "type": "string"
+          },
+          "transcript": {
+            "type": "string"
+          },
+          "duration": {
+            "type": "number"
+          },
+          "ai_score": {
+            "type": "number"
+          },
+          "feedback": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "scheduled",
+        "in_progress",
+        "completed",
+        "cancelled"
+      ],
+      "default": "scheduled"
+    },
+    "overall_score": {
+      "type": "number",
+      "description": "Overall interview score (0-100)"
+    },
+    "strengths": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "improvement_areas": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "interview_duration": {
+      "type": "number",
+      "description": "Total interview duration in minutes"
+    },
+    "started_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "completed_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "resume_id",
+    "target_role"
+  ]
+}

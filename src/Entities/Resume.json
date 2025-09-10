@@ -1,0 +1,101 @@
+{
+  "name": "Resume",
+  "type": "object",
+  "properties": {
+    "candidate_name": {
+      "type": "string",
+      "description": "Candidate's full name"
+    },
+    "email": {
+      "type": "string",
+      "description": "Candidate's email address"
+    },
+    "phone": {
+      "type": "string",
+      "description": "Candidate's phone number"
+    },
+    "skills": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Extracted technical and soft skills"
+    },
+    "experience_years": {
+      "type": "number",
+      "description": "Total years of experience"
+    },
+    "education": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "degree": {
+            "type": "string"
+          },
+          "institution": {
+            "type": "string"
+          },
+          "year": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "work_experience": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "company": {
+            "type": "string"
+          },
+          "position": {
+            "type": "string"
+          },
+          "duration": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "file_url": {
+      "type": "string",
+      "description": "URL of uploaded resume file"
+    },
+    "ats_score": {
+      "type": "number",
+      "description": "ATS compatibility score (0-100)"
+    },
+    "recommended_domain": {
+      "type": "string",
+      "enum": [
+        "Software Development",
+        "Data Science",
+        "Product Management",
+        "Marketing",
+        "Sales",
+        "HR",
+        "Finance",
+        "Other"
+      ],
+      "description": "AI-recommended job domain"
+    },
+    "parsing_status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "processing",
+        "completed",
+        "error"
+      ],
+      "default": "pending"
+    }
+  },
+  "required": [
+    "candidate_name"
+  ]
+}
