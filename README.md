@@ -1,38 +1,51 @@
-Interview AI
-Welcome to Interview AI, a sophisticated web application engineered to transform the way you prepare for job interviews. Leveraging the power of Google's Gemini API and Firebase Firestore, this platform provides a comprehensive and personalized training environment to help you secure your next career opportunity.
+# Interview AI 
+# Overview
+Interview AI is an AI-powered platform designed to streamline the interview process for both interviewers and candidates. Built using Base44, this application provides tools for generating real-time AI-driven interview questions, managing the interview process, and offering enhanced practice capabilities for candidates. The platform aims to supercharge interview preparation and execution, making it easier to conduct effective interviews and prepare for job opportunities.
 
-Key Features
-Our platform is built to deliver a targeted and effective interview preparation experience. The core features are designed to provide you with the tools and feedback you need to succeed:
+# Features
+Real-Time AI-Generated Questions: Dynamically generates tailored interview questions based on the selected job category and position.
+Interview Management Tools: Allows interviewers to save notes and questions for individual candidates, streamlining the hiring process.
+AI-Powered Follow-Up Questions: Generates smart follow-up questions based on candidate responses to uncover deeper insights.
+Candidate Practice Mode: Offers candidates a platform to practice and improve their interview skills with automated scoring and feedback.
+Cross-Platform Compatibility: Accessible on web and mobile devices for a seamless user experience.
 
-Intelligent Interview Simulation: Generate a dynamic and realistic set of interview questions tailored to any job title.
+# Getting Started
+# Prerequisites
+A modern web browser (e.g., Chrome, Firefox, or Safari)
+Node.js and npm (for local development, if applicable)
+Access to the Base44 platform for deployment
 
-Actionable Performance Feedback: Receive instant, data-driven feedback on your responses, complete with a performance score and concrete suggestions for improvement.
+# Installation
+Clone the Repository:
+git clone https://github.com/Akshara-1/Mock-Interview-Assistant
 
-Hands-Free Practice: Utilize integrated speech-to-text functionality to practice your verbal delivery and timing, just as you would in a real interview.
+Install Dependencies:If the project includes a frontend or backend setup, install the required dependencies:
+npm install
 
-Professional Cover Letter Generation: Instantly create a compelling cover letter by providing your job title and key qualifications, powered by advanced language models.
 
-Persistent Progress Tracking: All interview sessions are securely stored in a cloud-based Firestore database, allowing you to track your progress over time and review past performance.
+# Configure Environment:
 
-Technology Stack
-Interview AI is built on a modern, robust, and scalable technology stack, ensuring a seamless and efficient user experience.
+Create a .env file in the root directory.
+Add necessary environment variables (e.g., API keys for Base44 or other services):BASE44_API_KEY=your-api-key
 
-Frontend: The user interface is developed with HTML5 and styled using Tailwind CSS, providing a clean, responsive, and mobile-friendly design. The core application logic is written in JavaScript.
+Run Locally (if applicable):
+npm start
 
-AI Integration: The platform's intelligence is powered by the Google Gemini API, which handles all natural language processing tasks, including question generation, feedback analysis, and text creation.
+# Usage
 
-Data Management: Firebase Firestore serves as the backend database, offering secure, real-time data storage for all user interview records.
+# For Interviewers:
+Sign up or log in to the platform.
+Select a job role to generate tailored interview questions.
+Use the interview management tools to track candidate progress and save notes.
+Leverage AI-generated follow-up questions to dive deeper into candidate responses.
 
-Browser APIs: The Web Speech API is utilized to enable hands-free voice-to-text input, enhancing the interactive nature of the application.
 
-Local Development & Deployment
-This project is a single-file web application, designed for straightforward local execution and deployment.
+# For Candidates:
+Access the practice mode to answer AI-generated questions.
+Receive automated feedback and scoring to improve your responses.
+Practice with realistic interview simulations to boost confidence.
 
-Clone the Repository: Clone this project from its GitHub repository.
 
-Open index.html: Simply open the index.html file in any modern web browser to run the application locally.
 
-Note: For full functionality, including AI services and data persistence, the application requires a secure environment that provides Firebase and API keys.
-
-File Overview
-The entire application is self-contained within a single index.html file, encompassing the complete frontend, styling, and application logic. This design ensures simplicity and portability.
+# Contributing
+We welcome contributions to enhance Interview AI! 
